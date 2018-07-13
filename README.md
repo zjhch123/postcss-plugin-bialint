@@ -8,20 +8,26 @@
 
 ```css
 .foo {
-    /* Input example */
+  background-image: url(https://www.baidu.com/1.png);  /* that will be ok*/
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  background-image: url(http://www.baidu.com/1.png);  /* an error will be throw */
+}
+```
+
+```css
+.foo {
+  background-image: url(http://www.baidu.com/1.png) /* ignore-protocol */;  /* ignore check */
 }
 ```
 
 ## Usage
 
 ```js
-postcss([ require('postcss-plugin-bialint') ])
+postcss([ require('postcss-bialint') ])
 ```
 
 See [PostCSS] docs for examples for your environment.

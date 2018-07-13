@@ -8,7 +8,7 @@ const base64Reg = /data:/i
  * 注释必须添加在本行分号之前，如: background: url(http://www.xxx.com/1.png) /* ignore-protocol * /;
  * 不能写在分号之后，否则会解析不到这行注释。
  */
-module.exports = postcss.plugin('postcss-bia', (opts = {}) => {
+module.exports = postcss.plugin('postcss-bialint', (opts = {}) => {
   const ignoreReg = new RegExp('\/\\*\\s*' + (opts.ignoreFlag || 'ignore-protocol') + '\\s*\\*\/') // 构造匹配注释的正则, 注释规则: /* xxx */
 
   return (css, _) => {
@@ -21,7 +21,7 @@ module.exports = postcss.plugin('postcss-bia', (opts = {}) => {
         const raw = decl.value.trim()
         if (!ignoreReg.test(rawWithComment) && !base64Reg.test(raw) && httpReg.test(raw)) {
           throw decl.error('can NOT use http protocol in css files', {
-            plugin: 'postcss-bia'
+            plugin: 'postcss-bialint'
           })
         }
       })
