@@ -1,0 +1,63 @@
+a {
+  background: url(https://www.baidu.com);
+}
+a {
+  background-image: url(https://www.baidu.com);
+}
+a { 
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+a { 
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+a { 
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yhttp://H5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+a:after {
+  background-image: url(https://www.baidu.com);
+  content: 'http://www.baidu.com'
+}
+a {
+  cursor: pointer;
+  background: #00FF00 url(https://www.baidu.com) no-repeat fixed top;
+  display: block;
+  width: 300px;
+  height: 120px;
+}
+a {
+  cursor: pointer;
+  background: #00FF00 
+    url(https://www.baidu.com)
+    no-repeat fixed top;
+  display: block;
+  width: 300px;
+  height: 120px;
+}
+a { 
+  background-image: 
+  url(https://www.baidu.com)
+}
+a { 
+  background: url(
+    data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yhttp://H5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  );
+}
+a { 
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yhttp://H5BAEAAAAALAAAAAABAAEAAAIBRAA7) /*http://*/;
+}
+/*http://*/
+a {
+  cursor: pointer;
+  background: #00FF00 url(https://www.baidu.com) no-repeat fixed top;
+  display: block;
+  width: 300px;
+  height: 120px; }
+a {
+  cursor: pointer;
+  background:
+  #00FF00 
+    url(https://www.baidu.com)
+    no-repeat fixed top;
+  display: block;
+  width: 300px;
+  height: 120px; }

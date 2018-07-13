@@ -1,0 +1,55 @@
+a { 
+  background: #00FF00 url(http://www.baidu.com) no-repeat fixed top /* custom-flag */;
+}
+a { 
+  background: #00FF00 url(http://www.baidu.com) no-repeat fixed top 
+    /* custom-flag */;
+} 
+a { 
+  background: #00FF00 url(http://www.baidu.com) /* custom-flag */ no-repeat fixed top ;
+}
+a { 
+  background: #00FF00 /* custom-flag */ url(http://www.baidu.com) no-repeat fixed top ;
+}
+a { 
+  /*http://*/
+  background: #00FF00 url(http://www.baidu.com) no-repeat fixed top /*custom-flag*/;
+}
+a {
+  cursor: pointer;
+  background: #00FF00 
+    url(http://www.baidu.com) /* custom-flag */
+    no-repeat fixed top;
+  display: block;
+  width: 300px;
+  height: 120px;
+}
+a {
+  cursor: pointer;
+  background: #00FF00 
+    no-repeat fixed top
+    url(http://www.baidu.com) 
+      /* custom-flag */;
+  display: block;
+  width: 300px;
+  height: 120px;
+}
+a {
+  cursor: pointer;
+  background: #00FF00 
+    no-repeat fixed top /* custom-flag */
+    url(http://www.baidu.com);
+  display: block;
+  width: 300px;
+  height: 120px;
+}
+
+a {
+  cursor: pointer;
+  background: #00FF00 
+    no-repeat fixed top 
+    url(http://www.baidu.com) /* custom-flag */;
+  display: block;
+  width: 300px;
+  height: 120px;
+}
